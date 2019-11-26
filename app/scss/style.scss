@@ -1,13 +1,277 @@
-html {
-    box-sizing: border-box;
+@import "global";
+@import "vars";
+
+/******************************* HEADER STYLE ***********************************/
+
+.header {
+  &__top {
+    background-color: $bg;
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 0;
+    }
+  }
+  &__seller {
+    margin-left: auto;
+    margin-right: 50px;
+    .seller {
+      padding: 3px 18px 2px;
+      color: #ffffff;
+      background-color: $hover-color;
+      border-radius: 27px;
+    }
+  }
+  &__btn {
+    .login,
+    .register {
+      width: 90px;
+      padding: 5px 0;
+      border-radius: 4px;
+      color: #ffffff;
+      text-align: center;
+    }
+    .login {
+      background-color: #62d03b;
+      margin-right: 15px;
+    }
+    .register {
+      background-color: #ff6a6c;
+    }
+    &-search {
+      height: 45px;
+      border: none;
+      border-radius: 27px;
+      background-color: $bg-btn;
+      padding: 0 30px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+  &__menu {
+    padding: 20px 0;
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    ul.menu {
+      display: flex;
+      text-transform: uppercase;
+      font-weight: 500;
+      li {
+        & + li {
+          margin-left: 35px;
+        }
+        a {
+          transition: all .3s ease;
+          &:hover {
+            color: $hover-color;
+          }
+        }
+      }
+    }
+  }
+  &__form-box {
+    position: relative;
+    input {
+      height: 45px;
+      width: 360px;
+      padding-left: 25px;
+      padding-right: 85px;
+      border: solid 1px #d9dfe5;
+      border-radius: 24px;
+      &::placeholder {
+        color: #898f96;
+      }
+    }
+  }
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+/******************************* SEARCH STYLE ***********************************/
+
+.search {
+  background-color: $bg-btn;
+  text-align: center;
+  color: #fff;
+  &__inner {
+    position: relative;
+    min-height: 725px;
+    padding: 170px 0 95px;
+  }
+  &__suptitle,
+  &__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  &__title {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 500;
+    margin-bottom: 60px;
+  }
+  &__btn {
+    &-box {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    &-link {
+      color: #ffffff;
+      padding: 11px 30px;
+      border: solid 1px #fff;
+      border-radius: 27px;
+      background-color: $bg-btn;
+      &:hover {
+        background-color: #fff;
+        color: $bg-btn;
+      }
+      & + .search__btn-link {
+        margin-left: 30px;
+      }
+    }
+    &-form {
+      width: 220px;
+      color: #fff;
+      text-align: center;
+      border: none;
+      background-color: $bg-btn;
+      border-radius: 3px;
+      margin-left: auto;
+    }
+  }
+  &__form {
+    border-radius: 17px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08), 0 -25px 0 -11px rgba(#fff, .5);
+    position: absolute;
+    bottom: -65px;
+    left: 0;
+    right: 0;
+    &-inner {
+      border-radius: 32px;
+      box-shadow: 0 -52px 0 -24px rgba(#fff, .5);
+    }
+    form {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 40px;
+      display: flex;
+      input {
+        height: 55px;
+        max-width: 610px;
+        width: 100%;
+        padding: 0 30px;
+        border: solid 1px #dcdcdc;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-right: none;
+        &::placeholder {
+          color: #676767;
+        }
+      }
+    }
+  }
 }
 
-body {
+// custom select
+
+.select-box {
+  position: relative;
+  display: block;
+  width: 195px;
+  color: #555555;
+  border: solid 1px #dcdcdc;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: left;
+  &__current {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    &:focus {
+      & + .select-box__list {
+        opacity: 1;
+        // We have to set "animation-name: none;" to make the list visible (read below how it works)
+        animation-name: none;
+        .select-box__option {
+          cursor: pointer;
+        }
+      }
+      .select-box__icon {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 8px;
+    transition: 0.2s ease;
+  }
+  &__value {
+    display: flex;
+  }
+  &__input {
+    display: none;
+    &:checked + .select-box__input-text {
+      display: block;
+    }
+  }
+
+  &__input-text {
+    display: none;
+    width: 100%;
     margin: 0;
+    padding: 11px 20px;
+    background-color: #fff;
+  }
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    // We need to use animation with delay.
+    // Otherwise the click event will not have time to run on label, because this element disapears immediately when .select-box__current element loses the focus.
+    // This delay will not be noticed because we set "opacity" to "0".
+    // We also use "animation-fill-mode: forwards" to make the list stay hidden.
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+  }
+  &__option {
+    display: block;
+    padding: 3px;
+    background-color: #fff;
+
+    &:hover,
+    &:focus {
+      color: #546c84;
+      background-color: #fbfbfb;
+    }
+  }
 }
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+//end custom select
