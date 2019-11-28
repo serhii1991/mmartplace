@@ -12,4 +12,6 @@ $(function() {
   	nextArrow: '<button type="button" class="slick-next"><span class="icon-angle-right"></span></button>'
   });
 
+  var mixer = mixitup('.newest__inner-box');
+
 });

@@ -11,302 +11,511 @@
 </head>
 <body>
 
-<header class="header">
-  <div class="header__top">
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <div class="header__logo">
+            <a href="#">
+              <img src="images/logo.png" alt="mmartplace">
+            </a>
+          </div>
+          <div class="header__seller">
+            <a href="#" class="seller">Become a Seller</a>
+          </div>
+          <div class="header__box">
+            <div class="header__btn">
+              <a href="#" class="login">Login</a>
+              <a href="#" class="register">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__menu">
+      <div class="container">
+        <div class="header__menu-inner">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">All products</a></li>
+            <li><a href="#">Wordpress</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pages</a></li>
+          </ul>
+          <div class="header__form-box">
+            <form>
+              <input type="text" placeholder="Search product here..." required>
+              <button class="header__btn-search" type="button">
+                <span class="icon-search"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="search">
     <div class="container">
-      <div class="header__top-inner">
-        <div class="header__logo">
-          <a href="#">
-            <img src="images/logo.png" alt="mmartplace">
-          </a>
+      <div class="search__inner">
+        <div class="search__suptitle">
+          Create Your Own
         </div>
-        <div class="header__seller">
-          <a href="#" class="seller">Become a Seller</a>
+        <div class="search__title">
+          Digital Product Marketplace
         </div>
-        <div class="header__box">
-          <div class="header__btn">
-            <a href="#" class="login">Login</a>
-            <a href="#" class="register">Register</a>
+        <div class="search__text">
+          MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+        </div>
+        <div class="search__btn-box">
+          <a class="search__btn-link" href="#">View All Products</a>
+          <a class="search__btn-link" href="#">Popular Products</a>
+        </div>
+        <div class="search__form">
+          <div class="search__form-inner">
+            <form action="">
+              <input type="text" placeholder="Search your products..." required>
+              <div class="select-box">
+                <div class="select-box__current" tabindex="1">
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                    <p class="select-box__input-text">Software</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
+                    <p class="select-box__input-text">Plugins</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked"/>
+                    <p class="select-box__input-text">WordPress</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked"/>
+                    <p class="select-box__input-text">Site Template</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
+                    <p class="select-box__input-text">PSD Templates</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="5" value="6" name="Ben" checked="checked"/>
+                    <p class="select-box__input-text">Joomla</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="6" value="7" name="Ben" checked="checked"/>
+                    <p class="select-box__input-text">User Interface</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="7" value="8" name="Ben" checked="checked"/>
+                    <p class="select-box__input-text">Landing Page</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="8" value="9" name="Ben" checked="checked"/>
+                    <p class="select-box__input-text">All Categories</p>
+                  </div>
+                  <img class="select-box__icon" src="images/icons/arrow-down.png" alt="Arrow Icon" aria-hidden="true"/>
+                </div>
+                <ul class="select-box__list">
+                  <li>
+                    <label class="select-box__option" for="0" aria-hidden="aria-hidden">Software</label>
+                  </li>
+                  <li>
+                    <label class="select-box__option" for="1" aria-hidden="aria-hidden">Plugins</label>
+                  </li>
+                  <li>
+                    <label class="select-box__option" for="2" aria-hidden="aria-hidden">WordPress</label>
+                  </li>
+                  <li>
+                    <label class="select-box__option" for="3" aria-hidden="aria-hidden">Site Template</label>
+                  </li>
+                  <li>
+                    <label class="select-box__option" for="4" aria-hidden="aria-hidden">PSD Templates</label>
+                  </li>
+                  <li>
+                    <label class="select-box__option" for="5" aria-hidden="aria-hidden">Joomla</label>
+                  </li>
+                  <li>
+                    <label class="select-box__option" for="6" aria-hidden="aria-hidden">User Interface</label>
+                  </li>
+                  <li>
+                    <label class="select-box__option" for="7" aria-hidden="aria-hidden">Landing Page</label>
+                  </li>
+                  <li>
+                    <label class="select-box__option" for="8" aria-hidden="aria-hidden">All Categories</label>
+                  </li>
+                </ul>
+              </div>
+              <button class="search__btn-form" type="button">Search Now</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="header__menu">
+  </section>
+
+  <section class="items">
     <div class="container">
-      <div class="header__menu-inner">
-        <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">All products</a></li>
-          <li><a href="#">Wordpress</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pages</a></li>
-        </ul>
-        <div class="header__form-box">
-          <form>
-            <input type="text" placeholder="Search product here..." required>
-            <button class="header__btn-search" type="button">
-              <span class="icon-search"></span>
-            </button>
-          </form>
+      <div class="items__inner">
+        <div class="item">
+          <div class="item__image">
+            <img src="images/icons/item-icon-1.png" alt="icon">
+          </div>
+          <div class="item__title">
+            Best UX Research
+          </div>
+          <div class="item__text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+            the mattis, leo quam aliquet diam
+            congue is laoreet elit metus.
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<section class="search">
-  <div class="container">
-    <div class="search__inner">
-      <div class="search__suptitle">
-        Create Your Own
-      </div>
-      <div class="search__title">
-        Digital Product Marketplace
-      </div>
-      <div class="search__text">
-        MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-      </div>
-      <div class="search__btn-box">
-        <a class="search__btn-link" href="#">View All Products</a>
-        <a class="search__btn-link" href="#">Popular Products</a>
-      </div>
-      <div class="search__form">
-        <div class="search__form-inner">
-          <form action="">
-            <input type="text" placeholder="Search your products..." required>
-            <div class="select-box">
-              <div class="select-box__current" tabindex="1">
-                <div class="select-box__value">
-                  <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
-                  <p class="select-box__input-text">Software</p>
-                </div>
-                <div class="select-box__value">
-                  <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
-                  <p class="select-box__input-text">Plugins</p>
-                </div>
-                <div class="select-box__value">
-                  <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked"/>
-                  <p class="select-box__input-text">WordPress</p>
-                </div>
-                <div class="select-box__value">
-                  <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked"/>
-                  <p class="select-box__input-text">Site Template</p>
-                </div>
-                <div class="select-box__value">
-                  <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
-                  <p class="select-box__input-text">PSD Templates</p>
-                </div>
-                <div class="select-box__value">
-                  <input class="select-box__input" type="radio" id="5" value="6" name="Ben" checked="checked"/>
-                  <p class="select-box__input-text">Joomla</p>
-                </div>
-                <div class="select-box__value">
-                  <input class="select-box__input" type="radio" id="6" value="7" name="Ben" checked="checked"/>
-                  <p class="select-box__input-text">User Interface</p>
-                </div>
-                <div class="select-box__value">
-                  <input class="select-box__input" type="radio" id="7" value="8" name="Ben" checked="checked"/>
-                  <p class="select-box__input-text">Landing Page</p>
-                </div>
-                <div class="select-box__value">
-                  <input class="select-box__input" type="radio" id="8" value="9" name="Ben" checked="checked"/>
-                  <p class="select-box__input-text">All Categories</p>
-                </div>
-                <img class="select-box__icon" src="images/icons/arrow-down.png" alt="Arrow Icon" aria-hidden="true"/>
-              </div>
-              <ul class="select-box__list">
-                <li>
-                  <label class="select-box__option" for="0" aria-hidden="aria-hidden">Software</label>
-                </li>
-                <li>
-                  <label class="select-box__option" for="1" aria-hidden="aria-hidden">Plugins</label>
-                </li>
-                <li>
-                  <label class="select-box__option" for="2" aria-hidden="aria-hidden">WordPress</label>
-                </li>
-                <li>
-                  <label class="select-box__option" for="3" aria-hidden="aria-hidden">Site Template</label>
-                </li>
-                <li>
-                  <label class="select-box__option" for="4" aria-hidden="aria-hidden">PSD Templates</label>
-                </li>
-                <li>
-                  <label class="select-box__option" for="5" aria-hidden="aria-hidden">Joomla</label>
-                </li>
-                <li>
-                  <label class="select-box__option" for="6" aria-hidden="aria-hidden">User Interface</label>
-                </li>
-                <li>
-                  <label class="select-box__option" for="7" aria-hidden="aria-hidden">Landing Page</label>
-                </li>
-                <li>
-                  <label class="select-box__option" for="8" aria-hidden="aria-hidden">All Categories</label>
-                </li>
-              </ul>
-            </div>
-            <button class="search__btn-form" type="button">Search Now</button>
-          </form>
+        <div class="item">
+          <div class="item__image">
+            <img src="images/icons/item-icon-2.png" alt="icon">
+          </div>
+          <div class="item__title">
+            Fully Responsive
+          </div>
+          <div class="item__text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+            the mattis, leo quam aliquet diam
+            congue is laoreet elit metus.
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="items">
-  <div class="container">
-    <div class="items__inner">
-      <div class="item">
-        <div class="item__image">
-          <img src="images/icons/item-icon-1.png" alt="icon">
-        </div>
-        <div class="item__title">
-          Best UX Research
-        </div>
-        <div class="item__text">
-          Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
-the mattis, leo quam aliquet diam
-congue is laoreet elit metus.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item__image">
-          <img src="images/icons/item-icon-2.png" alt="icon">
-        </div>
-        <div class="item__title">
-          Fully Responsive
-        </div>
-        <div class="item__text">
-          Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
-the mattis, leo quam aliquet diam
-congue is laoreet elit metus.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item__image">
-          <img src="images/icons/item-icon-3.png" alt="icon">
-        </div>
-        <div class="item__title">
-          Buy & Sell Easily
-        </div>
-        <div class="item__text">
-          Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
-the mattis, leo quam aliquet diam
-congue is laoreet elit metus.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="featured">
-  <div class="container">
-    <div class="featured__title title">
-      Weekly Featured Products
-    </div>
-    <div class="featured__inner">
-      <div class="featured__item">
-        <div class="featured__item-inner">
-          <div class="featured__item-image"></div>
-          <div class="featured__item-content">
-            <div class="featured__item-title">
-              One Page Resume Template
-            </div>
-            <div class="featured__item-description">
-              <div class="featured__item-name">
-                AazzTech
-              </div>
-              <div class="featured__item-product">
-                WordPress
-              </div>
-            </div>
-            <div class="featured__item-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-            </div>
-            <div class="featured__item-tags">
-              <a href="#" class="featured__item-tags--item">website</a>
-              <a href="#" class="featured__item-tags--item">plugin</a>
-              <a href="#" class="featured__item-tags--item">landing page</a>
-            </div>
-            <div class="featured__item-box">
-              <div class="price">$10 - $50</div>
-              <a href="#" class="likes">46</a>
-              <div class="buys">643</div>
-              <div class="rating"></div>
-            </div>
+        <div class="item">
+          <div class="item__image">
+            <img src="images/icons/item-icon-3.png" alt="icon">
+          </div>
+          <div class="item__title">
+            Buy & Sell Easily
+          </div>
+          <div class="item__text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+            the mattis, leo quam aliquet diam
+            congue is laoreet elit metus.
           </div>
         </div>
       </div>
-      <div class="featured__item">
-        <div class="featured__item-inner">
-          <div class="featured__item-image"></div>
-          <div class="featured__item-content">
-            <div class="featured__item-title">
-              One Page Resume Template
-            </div>
-            <div class="featured__item-description">
-              <div class="featured__item-name">
-                AazzTech
+    </div>
+  </section>
+
+  <section class="featured">
+    <div class="container">
+      <div class="featured__title title">
+        Weekly Featured Products
+      </div>
+      <div class="featured__inner">
+        <div class="featured__item">
+          <div class="featured__item-inner">
+            <div class="featured__item-image"></div>
+            <div class="featured__item-content">
+              <div class="featured__item-title">
+                One Page Resume Template
               </div>
-              <div class="featured__item-product">
-                WordPress
+              <div class="featured__item-description">
+                <div class="featured__item-name">
+                  AazzTech
+                </div>
+                <div class="featured__item-product">
+                  WordPress
+                </div>
               </div>
-            </div>
-            <div class="featured__item-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-            </div>
-            <div class="featured__item-tags">
-              <a href="#" class="featured__item-tags--item">website</a>
-              <a href="#" class="featured__item-tags--item">plugin</a>
-              <a href="#" class="featured__item-tags--item">landing page</a>
-            </div>
-            <div class="featured__item-box">
-              <div class="price">$10 - $50</div>
-              <a href="#" class="likes">46</a>
-              <div class="buys">643</div>
-              <div class="rating"></div>
+              <div class="featured__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="featured__item-tags">
+                <a href="#" class="featured__item-tags--item">website</a>
+                <a href="#" class="featured__item-tags--item">plugin</a>
+                <a href="#" class="featured__item-tags--item">landing page</a>
+              </div>
+              <div class="featured__item-box">
+                <div class="price">$10 - $50</div>
+                <a href="#" class="likes">46</a>
+                <div class="buys">643</div>
+                <div class="rating"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="featured__item">
-        <div class="featured__item-inner">
-          <div class="featured__item-image"></div>
-          <div class="featured__item-content">
-            <div class="featured__item-title">
-              One Page Resume Template
-            </div>
-            <div class="featured__item-description">
-              <div class="featured__item-name">
-                AazzTech
+        <div class="featured__item">
+          <div class="featured__item-inner">
+            <div class="featured__item-image"></div>
+            <div class="featured__item-content">
+              <div class="featured__item-title">
+                One Page Resume Template
               </div>
-              <div class="featured__item-product">
-                WordPress
+              <div class="featured__item-description">
+                <div class="featured__item-name">
+                  AazzTech
+                </div>
+                <div class="featured__item-product">
+                  WordPress
+                </div>
+              </div>
+              <div class="featured__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="featured__item-tags">
+                <a href="#" class="featured__item-tags--item">website</a>
+                <a href="#" class="featured__item-tags--item">plugin</a>
+                <a href="#" class="featured__item-tags--item">landing page</a>
+              </div>
+              <div class="featured__item-box">
+                <div class="price">$10 - $50</div>
+                <a href="#" class="likes">46</a>
+                <div class="buys">643</div>
+                <div class="rating"></div>
               </div>
             </div>
-            <div class="featured__item-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-            </div>
-            <div class="featured__item-tags">
-              <a href="#" class="featured__item-tags--item">website</a>
-              <a href="#" class="featured__item-tags--item">plugin</a>
-              <a href="#" class="featured__item-tags--item">landing page</a>
-            </div>
-            <div class="featured__item-box">
-              <div class="price">$10 - $50</div>
-              <a href="#" class="likes">46</a>
-              <div class="buys">643</div>
-              <div class="rating"></div>
+          </div>
+        </div>
+        <div class="featured__item">
+          <div class="featured__item-inner">
+            <div class="featured__item-image"></div>
+            <div class="featured__item-content">
+              <div class="featured__item-title">
+                One Page Resume Template
+              </div>
+              <div class="featured__item-description">
+                <div class="featured__item-name">
+                  AazzTech
+                </div>
+                <div class="featured__item-product">
+                  WordPress
+                </div>
+              </div>
+              <div class="featured__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="featured__item-tags">
+                <a href="#" class="featured__item-tags--item">website</a>
+                <a href="#" class="featured__item-tags--item">plugin</a>
+                <a href="#" class="featured__item-tags--item">landing page</a>
+              </div>
+              <div class="featured__item-box">
+                <div class="price">$10 - $50</div>
+                <a href="#" class="likes">46</a>
+                <div class="buys">643</div>
+                <div class="rating"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="newest">
+    <div class="container">
+      <div class="newest__title title">
+        Newest Release Products
+        <a href="#">Filter by:</a>
+      </div>
+      <div class="newest__inner">
+        <div class="newest__inner-btn">
+          <button type="button" data-filter=".category-plugins">Plugins</button>
+          <button type="button" data-filter=".category-wordpress">WordPress</button>
+          <button type="button" data-filter=".category-site-template">Site Template</button>
+          <button type="button" data-filter=".category-psd-template">PSD Template</button>
+          <button type="button" data-filter=".category-joomla">Joomla</button>
+          <button type="button" data-filter=".category-user-interface">User Interface</button>
+          <button type="button" data-filter=".category-landing-page">Landing Page</button>
+          <button type="button" data-filter=".category-software">Software</button>
+        </div>
+        <div class="newest__inner-box">
+          <div class="newest__item mix category-plugins">
+            <div href="#" class="newest__item-img" style="background: #009688;">
+              <div class="newest__item-hover">
+                <a href="#">More Info</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="newest__item-content">
+              <div class="newest__item-title">
+                E-commerce Shopping Cart
+              </div>
+              <div class="newest__item-description">
+                <div class="newest__item-name">
+                  Theme-Valley
+                </div>  
+                <div class="newest__item-product plugin">
+                  Plugin
+                </div>
+              </div>
+              <div class="newest__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="newest__item-box">
+                <div class="price">$20</div>
+                <a href="#" class="likes">90</a>
+                <div class="buys">246</div> 
+              </div>
+            </div>
+          </div>
+          <div class="newest__item mix category-psd-template">
+            <div href="#" class="newest__item-img" style="background: #3c6490;">
+              <div class="newest__item-hover">
+                <a href="#">More Info</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="newest__item-content">
+              <div class="newest__item-title">
+                Marketify Coffee Shop
+              </div>
+              <div class="newest__item-description">
+                <div class="newest__item-name">
+                  EchoTheme
+                </div>  
+                <div class="newest__item-product psd">
+                  PSD
+                </div>
+              </div>
+              <div class="newest__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="newest__item-box">
+                <div class="price">$18</div>
+                <a href="#" class="likes">48</a>
+                <div class="buys">50</div> 
+              </div>
+            </div>
+          </div>
+          <div class="newest__item mix category-plugins">
+            <div href="#" class="newest__item-img" style="background: #009688;">
+              <div class="newest__item-hover">
+                <a href="#">More Info</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="newest__item-content">
+              <div class="newest__item-title">
+                Bryson - Portfolio Template
+              </div>
+              <div class="newest__item-description">
+                <div class="newest__item-name">
+                  Bryson - Portfolio Template
+                </div>  
+                <div class="newest__item-product html">
+                  HTML
+                </div>
+              </div>
+              <div class="newest__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="newest__item-box">
+                <div class="price">$10</div>
+                <a href="#" class="likes">56</a>
+                <div class="rating"></div>
+                <div class="buys">68</div> 
+              </div>
+            </div>
+          </div>
+          <div class="newest__item mix category-plugins">
+            <div href="#" class="newest__item-img" style="background: #3c6490;">
+              <div class="newest__item-hover">
+                <a href="#">More Info</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="newest__item-content">
+              <div class="newest__item-title">
+                E-commerce Shopping Cart
+              </div>
+              <div class="newest__item-description">
+                <div class="newest__item-name">
+                  Design-Hub
+                </div>  
+                <div class="newest__item-product plugin">
+                  Plugin
+                </div>
+              </div>
+              <div class="newest__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="newest__item-box">
+                <div class="price">$10-$50</div>
+                <a href="#" class="likes">45</a>
+                <div class="rating"></div>
+                <div class="buys">90</div> 
+              </div>
+            </div>
+          </div>
+          <div class="newest__item mix category-plugins">
+            <div href="#" class="newest__item-img" style="background: #009688;">
+              <div class="newest__item-hover">
+                <a href="#">More Info</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="newest__item-content">
+              <div class="newest__item-title">
+                Marketify Coffee Shop
+              </div>
+              <div class="newest__item-description">
+                <div class="newest__item-name">
+                  AazzTech
+                </div>  
+                <div class="newest__item-product psd">
+                  PSD
+                </div>
+              </div>
+              <div class="newest__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="newest__item-box">
+                <div class="price">$10-$50</div>
+                <a href="#" class="likes">48</a>
+                <div class="buys">50</div> 
+              </div>
+            </div>
+          </div>
+          <div class="newest__item mix category-plugins">
+            <div href="#" class="newest__item-img" style="background: #3c6490;">
+              <div class="newest__item-hover">
+                <a href="#">More Info</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="newest__item-content">
+              <div class="newest__item-title">
+                Bryson - Portfolio Template
+              </div>
+              <div class="newest__item-description">
+                <div class="newest__item-name">
+                  Coder-Lab
+                </div>  
+                <div class="newest__item-product plugin">
+                  HTML
+                </div>
+              </div>
+              <div class="newest__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="newest__item-box">
+                <div class="price">$10</div>
+                <a href="#" class="likes">56</a>
+                <div class="rating"></div>
+                <div class="buys">68</div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="all__product-box">
+          <a class="all__product-link" href="#">All New Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
