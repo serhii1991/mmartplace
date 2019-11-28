@@ -1,5 +1,6 @@
 @import "global";
 @import "vars";
+@import "fonts";
 
 /******************************* HEADER STYLE ***********************************/
 
@@ -49,6 +50,10 @@
       top: 0;
       right: 0;
       cursor: pointer;
+      span {
+        color: #fff;
+        font-size: 20px;
+      }
     }
   }
   &__menu {
@@ -307,3 +312,148 @@
     margin-bottom: 30px;
   }
 }
+
+/******************************* FEATURES STYLE ***********************************/
+
+.featured {
+  padding: 120px 0;
+  background-color: #eff1f5;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__item {
+    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    &-inner {
+      display: flex;
+    }
+    &-image {
+      max-width: 555px;
+      width: 100%;
+      background-color: #4e5760;
+    }
+    &-content {
+      padding: 50px 35px 25px;
+      background-color: #fff;
+      max-width: 585px;
+      width: 100%;
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: #000;
+    }
+    &-description {
+      display: flex;
+      margin-bottom: 32px;
+    }
+    &-name {
+      font-size: 15px;
+      padding-left: 42px;
+      margin-right: 20px;
+      color: #000;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #7347c1;
+        left: 0;
+        border-radius: 50%;
+      }
+    }
+    &-product {
+      color: #7347c1;
+      padding-left: 27px;
+      position: relative;
+      &::before {
+        content: '\f19a';
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+      }
+    }
+    &-text {
+      margin-bottom: 37px;
+    }
+    &-tags {
+      display: flex;
+      padding-bottom: 45px;
+      border-bottom: 1px solid #ececec;
+      margin-bottom: 23px;
+      &--item {
+        font-size: 15px;
+        color: #868c96;
+        margin-right: 8px;
+        border-radius: 14px;
+        background-color: #f1f3f6;
+        padding: 0 15px;
+      }
+    }
+    &-box {
+      display: flex;
+      font-size: 15px;
+      .price {
+        font-weight: 500;
+        color: #fff;
+        padding: 1px 20px;
+        margin-right: 20px;
+        background-color: #0674ec;
+        border-radius: 16px;
+      }
+      .likes,
+      .buys {
+        padding-left: 25px;
+        position: relative;
+      }
+      .likes {
+        margin-right: 20px;
+        &::before {
+          content: '\f08a';
+          font-family: 'icomoon';
+          position: absolute;
+          color: #7347c1;
+          left: 0;
+        }
+      }
+      .buys {
+        color: #0674ec;
+        &::before {
+          content: '\f07a';
+          font-family: 'icomoon';
+          position: absolute;
+          left: 0;
+        }
+      }
+      .rating {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.slick {
+  &-arrow {
+    position: absolute;
+    top: -127px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    padding: 15px 25px;
+    background-color: #7347c1;
+    border: none;
+    cursor: pointer;
+  }
+  &-next{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  &-prev {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    right: 74px;
+    z-index: 2;
+  }
+}
+
