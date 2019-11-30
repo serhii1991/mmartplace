@@ -431,29 +431,28 @@
       }
     }
   }
-}
-
-.slick {
-  &-arrow {
-    position: absolute;
-    top: -127px;
-    right: 20px;
-    font-size: 30px;
-    color: #fff;
-    padding: 10px 22px;
-    background-color: #7347c1;
-    border: none;
-    cursor: pointer;
-  }
-  &-next{
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-  }
-  &-prev {
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    right: 74px;
-    z-index: 2;
+  .slick {
+    &-arrow {
+      position: absolute;
+      top: -127px;
+      right: 20px;
+      font-size: 30px;
+      color: #fff;
+      padding: 10px 22px;
+      background-color: #7347c1;
+      border: none;
+      cursor: pointer;
+    }
+    &-next{
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+    &-prev {
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      right: 74px;
+      z-index: 2;
+    }
   }
 }
 
@@ -659,6 +658,260 @@
     color: #fff;
     background-color: #0674ec;
     border-radius: 28px;
+  }
+}
+
+/******************************* FOLLOWERS STYLE ***********************************/
+
+.followers {
+  padding: 120px 0;
+  background-color: #f6f7fb;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    a {
+      color: #747b86;
+      font-size: 16px;
+      padding-right: 30px;
+      position: relative;
+      &::after {
+        content: '\f142';
+        font-family: 'icomoon';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  &__inner {
+    &-box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    &-btn {
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+      margin-bottom: 50px;
+      background-color: #fff;
+      button {
+        padding: 8px 22px;
+        font-size: 15px;
+        border: none;
+        color: #747b86;
+        border-radius: 16px;
+        cursor: pointer;
+        margin-right: 8px;
+        &.mixitup-control-active {
+          color: #fff;
+          background-color: #0674ec;
+        }
+      }
+    }
+  }
+  &__item {
+    max-width: 365px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+    &:hover .newest__item-hover {
+      height: 230px;
+      transform: translateY(0%);
+    }
+    &-img {
+      min-height: 230px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &-content {
+      padding: 30px 30px 15px;
+    }
+    &-title {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #000;
+    }
+    &-description {
+      display: flex;
+      margin-bottom: 32px;
+    }
+    &-user {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 30px;
+      height: 30px;
+    }
+    &-name {
+      font-size: 15px;
+      padding-left: 20px;
+      margin-right: 20px;
+      color: #000;
+      position: relative;
+    }
+    &-product {
+      color: #7347c1;
+      padding-left: 27px;
+      position: relative;
+      &::before {
+        content: '\f19a';
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+      }
+    }
+    &-text {
+      margin-bottom: 30px;
+    }
+    &-box {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #ececec;
+      .price {
+        font-weight: 500;
+        color: #0674ec;
+        padding: 1px 20px;
+        margin-right: 20px;
+        background-color: #e6f1fd;
+        border-radius: 16px;
+      }
+      .likes,
+      .buys {
+        padding-left: 25px;
+        position: relative;
+      }
+      .likes {
+        &::before {
+          content: '\f08a';
+          font-family: 'icomoon';
+          position: absolute;
+          color: #7347c1;
+          left: 0;
+        }
+      }
+      .buys {
+        color: #0674ec;
+        margin-left: auto;
+        &::before {
+          content: '\f07a';
+          font-family: 'icomoon';
+          position: absolute;
+          left: 0;
+        }
+      }
+      .rating {
+        margin-left: 15px;
+      }
+    }
+  }
+  .slick {
+    &-arrow {
+      position: absolute;
+      top: -107px;
+      right: 20px;
+      font-size: 30px;
+      color: #fff;
+      padding: 10px 22px;
+      background-color: #7347c1;
+      border: none;
+      cursor: pointer;
+    }
+    &-next{
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+    &-prev {
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      right: 74px;
+      z-index: 2;
+    }
+  }
+}
+
+.psd {
+  &::before {
+    content: '\e900';
+  }
+}
+
+.html {
+  &::before {
+    content: '\f13b';
+  }
+}
+
+/******************************* ADVANTAGES STYLE ***********************************/
+
+.advantages {
+  background-color: #212225;
+  padding: 100px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    text-align: center;
+    font-size: 36px;
+    padding: 0 5px;
+    span {
+      color: #fff;
+      font-size: 18px;
+    }
+    &-number {
+      padding-top: 85px;
+      margin-bottom: 25px;
+      &.sale,
+      &.total,
+      &.customers,
+      &.members {
+        color: #feb71d;
+        position: relative;
+        &::after {
+          content: "\f0b1";
+          position: absolute;
+          font-family: icomoon;
+          color: #feb71d;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 45px;
+        }
+      }
+      &.total {
+        color: #58c9e9;
+        &::after {
+          content: '\f093';
+          color: #58c9e9;
+        }
+      }
+      &.customers {
+        color: #77de51;
+        &::after {
+          content: '\f118';
+          color: #77de51;
+        }
+      }
+      &.members {
+        color: #ff6a6d;
+        &::after {
+          content: "\f0c0";
+          color: #ff6a6d;
+        }
+      }
+    }
   }
 }
 
