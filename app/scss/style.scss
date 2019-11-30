@@ -329,7 +329,9 @@
     &-image {
       max-width: 555px;
       width: 100%;
-      background-color: #4e5760;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
     &-content {
       padding: 50px 35px 25px;
@@ -347,21 +349,19 @@
       display: flex;
       margin-bottom: 32px;
     }
+    &-img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 30px;
+      height: 30px;
+    }
     &-name {
       font-size: 15px;
-      padding-left: 42px;
+      padding-left: 20px;
       margin-right: 20px;
       color: #000;
       position: relative;
-      &::before {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        background-color: #7347c1;
-        left: 0;
-        border-radius: 50%;
-      }
     }
     &-product {
       color: #7347c1;
@@ -440,7 +440,7 @@
     right: 20px;
     font-size: 30px;
     color: #fff;
-    padding: 15px 25px;
+    padding: 10px 22px;
     background-color: #7347c1;
     border: none;
     cursor: pointer;
@@ -525,6 +525,9 @@
       display: block;
       position: relative;
       overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
     &-hover {
       transform: translateY(100%);
@@ -562,21 +565,19 @@
       display: flex;
       margin-bottom: 32px;
     }
+    &-user {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 30px;
+      height: 30px;
+    }
     &-name {
       font-size: 15px;
-      padding-left: 42px;
+      padding-left: 20px;
       margin-right: 20px;
       color: #000;
       position: relative;
-      &::before {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        background-color: #7347c1;
-        left: 0;
-        border-radius: 50%;
-      }
     }
     &-product {
       color: #7347c1;
