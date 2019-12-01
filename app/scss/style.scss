@@ -665,7 +665,7 @@
 
 .followers {
   padding: 120px 0;
-  background-color: #f6f7fb;
+  background-color: #eff1f5;
   &__title {
     display: flex;
     justify-content: space-between;
@@ -915,5 +915,114 @@
   }
 }
 
+/******************************* CHOOSE STYLE ***********************************/
 
+.choose {
+  padding: 120px 0 90px;
+  text-align: center;
+  color: $text;
+  &__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #000;
+    span {
+      color: #0674ec;
+    }
+  }
+  &__subtitle {
+    max-width: 705px;
+    margin: 0 auto 65px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    max-width: 365px;
+    padding: 55px 35px 60px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    position: relative;
+    &-title {
+      color: #000;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    &-text {
+      font-weight: 400;
+    }
+    &-img {
+      font-size: 60px;
+      margin-bottom: 50px;
+      &.icon-drivers-license-o {
+        color: #0674ec;
+      }
+      &.icon-magic {
+        color: #7f4ec2;
+      }
+      &.icon-lock {
+          color: #77de51;
+      }
+      &.icon-bar-chart-o {
+        color: #feb71d;
+      }
+      &.icon-envira {
+        color: #58c9e9;
+      }
+      &.icon-phone-square {
+        color: #ff6a6d;
+      }
+    }
+  }
+  .back-text {
+    position: absolute;
+    color: rgba(#5c87f8, .2);
+    font-size: 48px;
+    font-weight: 300;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+/******************************* POSSIBLY STYLE ***********************************/
+
+.possibly {
+  &__inner  {
+    display: flex;
+  }
+  &__item {
+    color: #fff;
+    max-width: 960px;
+    width: 100%;
+    padding: 100px 20px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &-img {
+      margin: 0 auto 50px;
+    }
+    &-title {
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+    &-text {
+      max-width: 600px;
+      margin: auto;
+    }
+    &-box {
+      margin-top: 30px;
+    }
+    &-link {
+      padding: 10px 30px;
+      background-color: #fff;
+      color: #0674ec;
+      border-radius: 27px;
+      &.shopping {
+        color: #7347c1;
+      }
+    }
+  }
+}
 
