@@ -27,6 +27,27 @@ $(function() {
     arrows: false
   });
 
+  $('.grid-btn').on('click', function() {
+    $('.grid-btn').addClass('active-btn');
+    $('.product__item').removeClass('item-list');
+    $('.list-btn').removeClass('active-btn');
+  });
+  $('.list-btn').on('click', function() {
+    $('.list-btn').addClass('active-btn');
+    $('.product__item').addClass('item-list');
+    $('.grid-btn').removeClass('active-btn');
+  });
+
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    grid: false,
+    min: 0,
+    max: 500,
+    from: 30,
+    to: 300,
+    prefix: "$"
+  });
+
   var mixer = mixitup('.newest__inner-box');
 
 });

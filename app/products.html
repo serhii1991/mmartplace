@@ -418,8 +418,8 @@
                 </form>
               </div>
               <div class="product__filter-grid">
-                <button class="icon-plus-square-o"></button>
-                <button class="icon-th-list"></button>
+                <button class="grid-btn active-btn icon-plus-square-o"></button>
+                <button class="list-btn icon-th-list"></button>
               </div>
             </div>
           </div>
@@ -431,25 +431,25 @@
                 <div class="product__categories">
                   <div class="product__categories-title aside-title">Categories</div>
                   <ul class="product__categories-list">
-                    <li><a href="#">Wordpress</a></li>
-                    <li><a href="#">Landing Page</a></li>
-                    <li><a href="#">Psd Template</a></li>
-                    <li><a href="#">Plugins</a></li>
-                    <li><a href="#">HTML Template</a></li>
-                    <li><a href="#">Components</a></li>
-                    <li><a href="#">Joomla Template</a></li>
+                    <li><a href="#">Wordpress</a><span>35</span></li>
+                    <li><a href="#">Landing Page</a><span>45</span></li>
+                    <li><a href="#">Psd Template</a><span>13</span></li>
+                    <li><a href="#">Plugins</a><span>08</span></li>
+                    <li><a href="#">HTML Template</a><span>34</span></li>
+                    <li><a href="#">Components</a><span>78</span></li>
+                    <li><a href="#">Joomla Template</a><span>26</span></li>
                   </ul>
                 </div>
                 <div class="product__filters-list">
                   <div class="product__filters_title aside-title">Filter Products</div>
                   <form>
-                    <input type="radio"><label for="">Trending Products </label>
-                    <input type="radio"><label for="">Popular Products</label>
-                    <input type="radio"><label for="">New Products</label>
-                    <input type="radio"><label for="">Best Seller</label>
-                    <input type="radio"><label for="">Best Rating</label>
-                    <input type="radio"><label for="">Low Price</label>
-                    <input type="radio"><label for="">High Price</label>
+                    <input name="filter" id="trend" value="trend" type="radio"><label for="trend">Trending Products </label>
+                    <input name="filter" id="popular" value="popular" type="radio"><label for="popular">Popular Products</label>
+                    <input name="filter" id="new" value="new" type="radio"><label for="new">New Products</label>
+                    <input name="filter" id="seller" value="seller" type="radio"><label for="seller">Best Seller</label>
+                    <input name="filter" id="rating" value="rating" type="radio"><label for="rating">Best Rating</label>
+                    <input name="filter" id="low" value="low" type="radio"><label for="low">Low Price</label>
+                    <input name="filter" id="high" value="high" type="radio"><label for="high">High Price</label>
                   </form>
                 </div>
                 <div class="product__price">
@@ -457,12 +457,461 @@
                     Pricing Range
                   </div>
                   <div class="product__price-range">
-                    
+                    <input type="text" class="js-range-slider" name="my_range" value="" />
                   </div>
-                  <a href="#">Search Update</a>
+                  <div class="aside__btn">
+                    <a class="aside__btn-link" href="#">Search Update</a>
+                  </div>
                 </div>
               </div>
-              <div class="product__main"></div>
+              <div class="product__main">
+                <div class="product__items">
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">Theme-Valley</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">ThemeLab</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">Artcorner</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">Theme-Valley</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">ThemeLab</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">Artcorner</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">Theme-Valley</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">ThemeLab</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">Artcorner</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">Theme-Valley</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">ThemeLab</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="product__item">
+                    <div class="product__item-image" style="background-image: url(images/aside-bg.jpg);"></div>
+                    <div class="product__item-content">
+                      <div class="title-wrapper">
+                        <div class="product__item-title">Finance and Consulting Business Theme</div>
+                        <div class="product__item-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                        </div>
+                        <div class="product__theme-name--list">Wordpress</div>
+                      </div>
+                      <div class="product__author-wrapper">
+                        <div class="product__item-author">
+                          <div class="product__author-image" style="background-image: url(images/aside-user-bg.jpg);"></div>
+                          <div class="product__author-name">Artcorner</div>
+                        </div>
+                        <div class="product__author-likes">90 Loves</div>
+                        <div class="product__author-comments">90 Comments</div>
+                        <div class="product__author-rate--line">
+                          <div class="rating"></div> <span>(34)</span>
+                        </div>
+                      </div>
+                      <div class="product__item-rate">
+                        <div class="product__item-rating">
+                          <div class="rating"></div>
+                        </div>
+                        <div class="product__item-cart">427</div>
+                      </div>
+                      <div class="product__item-theme">
+                        <div class="cart-wrapper">
+                          <div class="product__theme-price">$18</div>
+                          <div class="product__item-cart--line">427</div>
+                        </div>
+                        <div class="product__theme-name">Wordpress</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="pagination">
+                  <div class="pagination__inner">
+                    <button class="previos disable icon-angle-left"></button>
+                    <ul class="pagination__list">
+                      <li><a class="active" href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">...</a></li>
+                      <li><a href="#">8</a></li>
+                    </ul>
+                    <button class="next icon-angle-right"></button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
