@@ -3479,6 +3479,50 @@
   }
 }
 
+/*=======================================================================================================
+=====================================      FAVORITE PAGE     =============================================
+=======================================================================================================*/
+
+/************************************ FAVORITE STYLE ****************************************************/
+
+.favorite {
+  padding: 80px 0 120px;
+  background-color: #eff1f5;
+  &__filter {
+    &-title {
+      font-size: 24px;
+      margin-right: 100px;
+      span {
+        font-weight: 500;
+      }
+    }
+    &-sort {
+      padding: 37px 50px 37px 25px;
+      border-left: solid 1px #ececec;
+      border-right: solid 1px #ececec;
+      position: relative;
+      margin-top: -30px;
+      margin-bottom: -30px;
+      &::after {
+        content: "\f107";
+        position: absolute;
+        right: 20px;
+        font-family: "icomoon";
+      }
+    }
+  }
+  .more-items__inner {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .pagination {
+    &__inner {
+      justify-content: center;
+    }
+  }
+}
 
 
 
