@@ -3531,7 +3531,8 @@
 
 /************************************ LOGIN STYLE ****************************************************/
 
-.login {
+.login,
+.register {
   padding: 75px 120px;
   background-color: #eff1f5;
   &__inner {
@@ -3647,6 +3648,17 @@
     justify-content: space-between;
     a {
       color: $bg-btn;
+    }
+  }
+}
+
+.register {
+  &__text {
+    padding: 0 30px;
+  }
+  &__form {
+    button {
+      margin-top: 20px;
     }
   }
 }
