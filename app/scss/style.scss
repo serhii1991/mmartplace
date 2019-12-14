@@ -3532,7 +3532,8 @@
 /************************************ LOGIN STYLE ****************************************************/
 
 .login,
-.register {
+.register,
+.recover {
   padding: 75px 120px;
   background-color: #eff1f5;
   &__inner {
@@ -3652,14 +3653,22 @@
   }
 }
 
-.register {
+.register,
+.recover {
   &__text {
-    padding: 0 30px;
+    padding: 0 30px 25px;
   }
   &__form {
     button {
       margin-top: 20px;
     }
+  }
+}
+
+.recover {
+  &__text {
+    text-align: left;
+    padding: 0 45px 25px;
   }
 }
 
