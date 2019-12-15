@@ -3672,6 +3672,81 @@
   }
 }
 
+/*=======================================================================================================
+=====================================      HOW-IT-WORKS PAGE     =============================================
+=======================================================================================================*/
+
+/************************************ HOW-IT-WORKS STYLE ****************************************************/
+
+.product__breadcrumbs {
+  &-wrapper {
+    padding-bottom: 1px;
+  }
+  &.how-it-works {
+    text-align: center;
+    .product__breadcrumbs {
+      padding-bottom: 30px;
+      &-title {
+        margin-bottom: 25px;
+      }
+      &-text {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 65px;
+      }
+    }
+  }
+}
+
+.how-it-works {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    padding: 100px 0;
+    &:nth-child(even) {
+      background-color: #eff1f5;
+    }
+    &-image {
+      max-width: 460px;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &-content {
+      max-width: 460px;
+      width: 100%;
+    }
+    &-title {
+      font-size: 30px;
+      color: #000;
+      margin-bottom: 35px;
+    }
+    &-text {
+      margin-bottom: 25px;
+    }
+    &-link {
+      a {
+        width: 170px;
+        padding: 10px;
+        background-color: #fff;
+        text-align: center;
+        color: $bg-btn;
+        border-radius: 25px;
+        transition: all .3s;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        &:hover {
+          background-color: $bg-btn;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
 
 
 
