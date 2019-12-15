@@ -3673,14 +3673,16 @@
 }
 
 /*=======================================================================================================
-=====================================      HOW-IT-WORKS PAGE     =============================================
+===================================      HOW-IT-WORKS PAGE     ==========================================
 =======================================================================================================*/
 
 /************************************ HOW-IT-WORKS STYLE ****************************************************/
 
 .product__breadcrumbs {
   &-wrapper {
-    padding-bottom: 1px;
+    &.how-it-works {
+      padding-bottom: 1px;
+    }
   }
   &.how-it-works {
     text-align: center;
@@ -3747,7 +3749,136 @@
   }
 }
 
+/*=======================================================================================================
+==================================      PRICING-PLAN PAGE     ===========================================
+=======================================================================================================*/
 
+/********************************** HOW-IT-WORKS STYLE **************************************************/
 
+.pricing-plan {
+  padding: 120px 0;
+  background-color: #eff1f5;
+  &__title {
+    text-align: center;
+    color: #000;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    span {
+      color: $bg-btn;
+    }
+  }
+  &__text {
+    max-width: 685px;
+    margin: 0 auto 55px;
+    text-align: center;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    &.business {
+      border-top-color: $bg-btn;
+      .pricing-plan__item-button {
+        button {
+          background-color: $bg-btn;
+        }
+      }
+    }
+    &.agency {
+      border-top-color: #feb71d;
+      .pricing-plan__item-button {
+        button {
+          background-color: #feb71d;
+        }
+      }
+    }
+    max-width: 360px;
+    width: 100%;
+    padding: 0 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    border-top: 3px solid #ff6a6c;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    &-title {
+      font-size: 24px;
+      font-weight: 500;
+      padding: 25px 0;
+      text-align: center;
+      color: #000;
+      border-bottom: 1px solid #ececec;
+      margin-bottom: 30px;
+    }
+    &-price {
+      font-size: 36px;
+      color: #000;
+      text-align: center;
+      margin-bottom: 45px;
+      sup {
+        font-size: 18px;
+        top: -13px;
+        left: 2px;
+      }
+      span {
+        font-size: 16px;
+        color: $text;
+      }
+    }
+    &-list {
+      li {
+        padding-left: 25px;
+        position: relative;
+        margin-bottom: 5px;
+        display: inline-block;
+        &.question {
+          &::after {
+            content: "\f29c";
+            font-family: "icomoon";
+            position: absolute;
+            color: $text;
+            font-size: 18px;
+            top: 3px;
+            right: -30px;
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background-color: #c5cad4;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        span {
+          color: #000;
+          font-weight: 500;
+        }
+      }
+    }
+    &-button {
+      padding: 30px 0;
+      button {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        background-color: #ff6a6c;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          opacity: .9;
+        }
+      }
+    }
+  }
+}
 
 @import "media";
