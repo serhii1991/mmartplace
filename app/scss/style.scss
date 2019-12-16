@@ -4162,6 +4162,127 @@
   }
 }
 
+/*=======================================================================================================
+==================================      CONTACTS PAGE     ===========================================
+=======================================================================================================*/
+
+/********************************** CONTACTS STYLE **************************************************/
+
+.contacts {
+  padding: 120px 0;
+  background-color: #eff1f5;
+  text-align: center;
+  &__title {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 30px;
+    span {
+      color: $bg-btn;
+    }
+  }
+  &__text {
+    max-width: 680px;
+    margin: 0 auto 60px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &__item {
+    max-width: 360px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding: 140px 40px 45px;
+    &-title {
+      font-weight: 500;
+      font-size: 20px;
+      color: #000;
+      margin-bottom: 30px;
+      position: relative;
+      &.contacts-phone {
+        &::before {
+          content: "\f095";
+        }
+      }
+      &.contacts-email {
+        &::before {
+          content: "\f0a0";
+        }
+      }
+      &::before {
+        content: "\f041";
+        position: absolute;
+        font-family: "icomoon";
+        font-size: 48px;
+        color: $bg-btn;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -75px;
+      }
+    }
+    &-text {
+      a {
+        display: block;
+      }
+    }
+  }
+  &__form {
+    padding: 60px 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 5px;
+    &-title {
+      text-align: center;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #ececec;
+      margin-bottom: 40px;
+      font-size: 24px;
+      color: #000;
+      font-weight: 400;
+    }
+    form {
+      max-width: 750px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      input,
+      textarea {
+        width: 360px;
+        height: 50px;
+        border: 1px solid #ececec;
+        padding: 0 20px;
+        margin-bottom: 30px;
+        &::placeholder {
+          font-size: 16px;
+          color: #9e9e9e;
+        }
+      }
+      textarea {
+        padding: 20px;
+        width: 100%;
+        min-height: 130px;
+        resize: none;
+      }
+      button {
+        height: 50px;
+        width: 170px;
+        margin: 0 auto;
+        border-radius: 25px;
+        background-color: $bg-btn;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          opacity: .9;
+        }
+      }
+    }
+  }
+}
 
 
 
